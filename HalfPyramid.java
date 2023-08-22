@@ -1,8 +1,12 @@
+import java.util.Scanner;
+
 import javax.swing.plaf.synth.SynthSpinnerUI;
 
 public class HalfPyramid {
     public static void main(String[] args) {
-        int n=5;
+        System.out.println("Enter the Size of the pyramid : ");
+        Scanner in = new Scanner(System.in);
+        int n = in.nextInt();
         for (int i =1 ; i <= n ; i++){
             for(int j =1 ; j<=n-i;j++){
                 System.out.print(" ");
